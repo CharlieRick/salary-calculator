@@ -1,0 +1,266 @@
+/* background */
+
+body {
+    background: #a8e063;
+    background: -moz-linear-gradient(top, #a8e063 0%, #56ab2f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a8e063), color-stop(100%, #56ab2f));
+    background: -webkit-linear-gradient(top, #a8e063 0%, #56ab2f 100%);
+    background: -o-linear-gradient(top, #a8e063 0%, #56ab2f 100%);
+    background: -ms-linear-gradient(top, #a8e063 0%, #56ab2f 100%);
+    background: linear-gradient(to bottom, #a8e063 0%, #56ab2f 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* fonts */
+
+@font-face {
+    font-family: 'Geomanist';
+    src: url(../fonts/geomanist-regular-webfont.ttf);
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#inputSection h2 {
+    font-weight: 300;
+}
+
+
+/* Input Section */
+
+#inputSection h1 {
+    font-family: 'Geomanist';
+    font-size: 3em;
+}
+
+#salaryInput {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 80%;
+    border-bottom: solid 2px white;
+    transition: height 1s;
+    -webkit-transition: height 1s;
+}
+
+#submitButton {
+    border: solid white 3px;
+    height: 50px;
+    border-radius: 50px;
+    background: transparent;
+    margin: auto;
+    margin-top: 80px;
+    width: 70%;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    max-width: 400px;
+    cursor: pointer;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 2px;
+    border-radius: 5px;
+    background: white;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    color: black;
+}
+
+.ui-slider-horizontal {
+    height: .1em;
+    width: 80%;
+    margin-top: 40px;
+    margin: auto;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid white;
+}
+
+#enterSalaryLabel {
+    margin-bottom: 40px;
+}
+
+.row-centered {  
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+#inputSection {
+    min-width: 70%;
+}
+
+
+
+#enterSalaryLabel {
+    margin-top: 30px;
+}
+
+#salaryInput {
+    margin-top: 0px;
+    padding-bottom: 20px;
+    height: 50px;
+    font-size: 30px;
+
+}
+
+#bonusSlider {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+input[type=range] {
+    display: inline;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    content: "10%";
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    content: "10%";
+}
+
+#custom-handle {
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    border-radius: 25px;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 80px;
+}
+#custom-handle ::after {
+    content: "%";
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none;
+    background: white;
+    font-weight: normal;
+    color: white;
+}
+
+
+#resultsSection {
+    height: 80vh;
+}
+
+@media (max-width: 425px) {
+    #resultsSection {
+        height: 100vh;
+        padding-top: 40px; 
+        padding-bottom: 30px;
+    }
+    #tableSection h2{
+        margin-top: 40px; 
+    }
+
+    #enterSalaryLabel{
+        font-size: 5vw;
+    }
+
+    
+}
+
+/* Table Styling */
+
+
+#tableSection h1 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+#tableSection span {
+    font-size: 18px;
+}
+
+#tableSection h2 {
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+}
+
+#tableSection h3 {
+    font-size: 18px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+table {
+    width: 70%;
+    margin: 0px auto;
+    float: none;
+}
+
+th {
+    text-align: left;
+    font-weight: 300;
+}
+
+td {
+    text-align: right;
+    font-weight: 700;
+}
+
+/* Edit Results Button */
+
+#editDiv {
+    margin:auto;
+    cursor: pointer;
+}
+
+#upArrow {
+    width: 30px;
+    margin: auto;
+    display: block;
+}
+
+#editResults {
+    margin: auto;
+    padding-top: 50px;
+}
+
+#scrollToTopButton {
+    background-color: transparent;
+    background: none;
+    margin: auto;   
+    border: none;
+    
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 425px){
+#editResults {
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+}
